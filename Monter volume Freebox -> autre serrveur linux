@@ -1,0 +1,9 @@
+#Utiliser les disques ou array de la delta dans un autre serveur linux
+
+#En premier lieux, créer les dossiers dans le serveur ou l'on veut monter le volume:
+
+mkdir /mnt/freebox/toto
+
+#Ensuite on monte le volume:
+
+mount -t cifs -o user=freebox,password=YOURPASSWORD,vers=1.0 "//mafreebox.freebox.fr/DisqueXXX" /mnt/user/freebox/NAMEFOLDER
